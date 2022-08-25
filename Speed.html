@@ -1,0 +1,61 @@
+<html>
+        <head>
+            <title>speed converter</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="speedCSS.css">
+            <link rel="stylesheet" href="bootstrap.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>     
+                   
+        </head>
+    <body>
+        <div class="background">
+            <div class="background-second">
+                <h2 class="text-align"><strong>Converter</strong></h2>
+                <hr>
+                <select class="select btn-info">
+                    <option>Speed Converter</option>
+                    <option>Temperature Converter</option>
+                    <option>Distance Converter</option>
+                    <option>Time Converter</option>
+                    <option>Density Converter</option>
+                    <option>Volume Converter</option>
+                    <option>Angle Converter</option>
+                    <option>Area Converter</option>
+                </select>
+                <div id="ref">
+                    <button id="ref" onclick="refreshButton()" class="btn btn-danger btn-small">Refresh</button>
+                </div>
+                <br><br>
+                <div class="padding">
+                    <form>
+                        <label for="speed"><strong>Conversion to km/hr:</strong></label>
+                        <div id="msc">
+                        <input type="text" id="ms" name="fname" placeholder="input a number">
+                        </div>
+                        <br><br>
+                        <label for="speed"><strong>Conversion to m/s:</strong></label>
+                        <div id="khc">
+                        <input type="text" id="kh" name="lname" placeholder="input a number">
+                        </div>
+                        <br><br>
+                    </form>
+                </div>
+                <div id="submit-item">
+                    <button id="submit" onclick="submitButton1(); " class="btn btn-info">CONVERT to m/s</button>
+                </div>
+                <div id="submit-item1">
+                    <button id="submit" onclick="submitButton()" class="btn btn-info">CONVERT to km/hr</button>
+                </div>
+                    <div id="innertext1">
+                        <p id="innertext" >
+                        </P>
+                    </div>               
+                    <br><br>  
+            </div>
+        </div>
+        <script type="text/javascript" src="speedJS.js"></script>
+    </body>
+</html>
